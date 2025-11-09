@@ -5,6 +5,7 @@ import com.mythicalgames.chatgames.manager.GameManager;
 import com.mythicalgames.economy.MythicalEconomy;
 import org.allaymc.api.entity.interfaces.EntityPlayer;
 
+import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
@@ -38,15 +39,14 @@ public class WordUnscrambleGame implements BaseGame {
     }
 
     private String scrambleWord(String word) {
-        List<Character> letters = word.chars()
-                .mapToObj(c -> (char) c)
-                .toList();
+        List<Character> letters = new ArrayList<>();
+        for (char c : word.toCharArray()) letters.add(c);
 
         Collections.shuffle(letters);
-        StringBuilder scrambled = new StringBuilder();
-        for (char c : letters) {
-            scrambled.append(c);
-        }
+
+        StringBuilder scrambled = new StringBuilder(word.length());
+        letters.forEach(scrambled::append);
+
         return scrambled.toString();
     }
 

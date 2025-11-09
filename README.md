@@ -6,6 +6,8 @@ Rewards are given via Mythical-Economy. 💰
 
 ---
 
+![Mythical-Games](https://github.com/Mythical-Games/ChatGames/blob/master/Screenshot_20251109_230925_com.mojang.minecraftpe.jpg)
+
 ## 🚀 Features
 
 - 🧮 **Quick Math** – Solve problems before others!

@@ -20,12 +20,14 @@ java {
 repositories {
     mavenCentral()
     maven("https://storehouse.okaeri.eu/repository/maven-public")
+    maven("https://jitpack.io")
 }
 
 dependencies {
     // TODO: Update the version of api to the latest
     compileOnly(group = "org.allaymc.allay", name = "api", version = "0.16.0")
     compileOnly(group = "org.projectlombok", name = "lombok", version = "1.18.34")
+    compileOnly(group = "com.github.Mythical-Games", name = "Mythical-Economy", version = "1.1.0")
     implementation("eu.okaeri:okaeri-configs-yaml-snakeyaml:6.0.0-beta.1")
 
     annotationProcessor(group = "org.projectlombok", name = "lombok", version = "1.18.34")
